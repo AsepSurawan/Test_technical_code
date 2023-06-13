@@ -1,0 +1,25 @@
+﻿@model WebApplication1.Models.TestFormViewModel
+@{
+    ViewData["Title"] = "Home Page";
+
+    var hasil = new List<string>();
+    if (TempData["hasil"]!=null)
+    {
+        hasil = TempData["hasil"] as List<string>;
+
+    }
+}
+
+@*<div class="text-center">
+    <form asp-action="/Home/SubmitData" method="POST" class="form-control">
+        <input asp-for="Number" class="form-control" type="number" placeholder="Input number" />
+       <button type="submit" >Generate segitiga</button>
+   </form>
+</div>
+<div>
+    <p>hasil</p>
+    @foreach (var item in hasil)
+    {
+        <p>@item</p>
+    }
+    </div>*@
